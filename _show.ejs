@@ -1,0 +1,24 @@
+<% for(var i=0; i < users.length; i++) { %>
+    <tr>
+        <td>
+            <%= i + 1 %>
+        </td>
+        <td>
+            <%= users[i].locationid %>
+        </td>
+        <td>
+            <%= users[i].unit %>
+        </td>
+        <td>
+            <%= users[i].amount %>
+        </td>
+        <td>
+            <%= users[i].deviceid %>
+        </td>
+        <td><a class="delete" href="/update?id=<%= users[i]._id %>"><span><i
+                        class="fa-solid fa-pen-to-square"></i></span></a> &nbsp; &nbsp; &nbsp;
+            <a class="delete" data-id=<%=users[i]._id%> <span class="text-gradient"><i
+                        class="fas fa-times"></i></span></a>
+        </td>
+    </tr>
+    <% } %>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid-layout</title>
+
+    <style>
+        body {
+            margin: 20;
+
+        }
+
+        .container {
+
+            width: 95vw;
+            height: 40vh;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 13px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            box-sizing: border-box;
+
+
+        }
+
+        .container div {
+
+            padding: 20px;
+            border: 1px solid black;
+
+        }
+
+
+        .personnel {
+
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            grid-row-start: 1;
+            grid-row-end: span 2;
+            text-align: center
+        }
+
+        .education {
+            text-align: center;
+            grid-row-start: ;
+            grid-row-end: ;
+            grid-column-start: 3;
+            grid-column-end: 7;
+
+
+        }
+
+
+        .box4 {
+
+            grid-column-start: 4;
+            grid-column-end: span 2;
+            grid-row-start: ;
+            grid-row-end: ;
+            text-align: center
+        }
+
+        .box6 {
+
+            grid-column-start: ;
+            grid-column-end: ;
+            grid-row-start: 3;
+            grid-row-end: span 3;
+            text-align: center
+        }
+
+
+
+        .box9 {
+
+            grid-column-start: 4;
+            grid-column-end: span 2;
+            grid-row-start: ;
+            grid-row-end: ;
+            text-align: center
+        }
+
+        .box13 {
+
+            grid-column-start: 4;
+            grid-column-end: span 2;
+            grid-row-start: ;
+            grid-row-end: ;
+            text-align: center
+        }
+
+        .box17 {
+
+            grid-column-start: 4;
+            grid-column-end: span 2;
+            grid-row-start: ;
+            grid-row-end: ;
+            text-align: justify
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+    <div class="container">
+
+        <div class="personnel"> <b>Personnel </b></div>
+
+        <div class="education"> <b> Education</b> </div>
+
+
+        <div class="box3"><b>else</b></div>
+
+        <div class="box4"><b> polytechnic university </b></div>
+
+        <div class="box5"> <b> university </b></div>
+
+
+        <div class="box6"><b>Age </b></div>
+
+
+        <div class="box7"> - 30 </div>
+
+        <div class="box8"></div>
+
+        <div class="box9">
+
+            <a href="https://www.savonia.fi/opiskele-tutkinto/loyda-koulutusalasi/"> <b> Savonia UAS</b> </a>
+
+        </div>
+
+
+        <div class="box10"></div>
+
+        <div class="box11"> 30 - 50</div>
+
+        <div class="box12"> </div>
+
+        <div class="box13"></div>
+
+
+        <div class="box14">
+
+            <ol>
+                <li> Aalto University</li>
+                <li> Tampere University</li>
+                <li> Turku University</li>
+            </ol>
+
+
+        </div>
+
+        <div class="box15"> 50 - </div>
+
+        <div class="box16"></div>
+
+        <div class="box17"> <b> <i> <big> Savonia UAS is one of Finland's biggest and most versatile Universities of
+                        Applied Sciences. Our campuses are located in the cities of Kuopio, Iisalmi and Varkaus. We have
+                        over 7000 Finnish students, 500 international students and 500 employees. </big> </i></b></div>
+
+
+        <div class="box18"></div>
+
+
+    </div>
+
+
+</body>
+
+</html>

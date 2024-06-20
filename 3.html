@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> search box and button </title>
+
+    <style>
+        body
+         {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            height: 7rem;
+            background-color: lightgray;
+            font-size: 15px;
+        }
+
+        .prime-section {
+            margin-top: 2rem;
+            flex-grow: 4;
+            font-size: 15px;
+
+        }
+
+        a {
+            margin-right: 1rem;
+            margin-left: .5rem;
+            text-decoration: none;
+            color: blue;
+
+        }
+
+
+        .secondary-section {
+            margin-left: auto;
+            margin-top: 1.75rem;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="prime-section">
+
+            <a href="https://www.savonia.fi/opiskele-tutkinto/loyda-koulutusalasi/">Savonia(link)</a>
+
+
+            <select name="selectList" form="selectlist" value="Select">
+                <option value="a">Select</option>
+                <option value="b">item1</option>
+                <option value="c">item2</option>
+                <option value="d">item3</option>
+            </select>
+        </div>
+
+
+        <div class="secondary-section">
+            <form action="/action_page.php" id="carform">
+                <input type="text" id="fname" name="fname" value="search">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

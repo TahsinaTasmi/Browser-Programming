@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid-layout</title>
+
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        .container {
+
+            width: 100vw;
+            height: 100vh;
+
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 60px 300px 90px;
+
+            gap: 10px;
+            box-sizing: border-box;
+
+        }
+
+        .container div {
+
+            padding: 20px;
+
+            background-color: gold
+        }
+
+
+        .header {
+
+            grid-column-start: 1;
+            grid-column-end: 6;
+            text-align: center
+        }
+
+        .content-large {
+
+            grid-row-start: ;
+            grid-row-end: ;
+            grid-column-start: 2;
+            grid-column-end: span 3;
+            text-align: justify;
+
+        }
+
+        .content-large1 {
+            text-align: justify;
+
+        }
+
+        .footer {
+
+            grid-column: 1 / span 5;
+            text-align: center
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div class="container">
+
+        <div class="header">Welcome to Savonia</div>
+
+        <div class="content-large1">
+
+            <ul style="list-style-type: none;">
+
+                <li> <a href="https://www.savonia.fi/opiskele-tutkinto/loyda-koulutusalasi/">Studies</a></li>
+                <li> <a href="https://www.savonia.fi/en/study-with-us/for-students/services-for-students/dining/"> Lunch
+                    </a></li>
+                <li> <a href="https://www.savonia.fi/en/study-with-us/degree-studies/bachelors/internet-of-things/">IT
+                    </a> </li>
+                <li> <a href="https://www.savonia.fi/en/savonia-uas/schools/business/"> Management</a></li>
+                <li> <a href="https://www.savonia.fi/en/study-with-us/for-students/life-in-finland/">Free time </a></li>
+                <li> <a href="https://www.savonia.fi/en/study-with-us/other-studies/">Others </a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="content-large">Choose something from left</div>
+
+        <div class="content-large4">Ads</div>
+
+        <div class="footer">Contact</div>
+
+
+    </div>
+
+
+</body>
+
+</html>

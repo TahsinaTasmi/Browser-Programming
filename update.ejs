@@ -1,0 +1,32 @@
+<%- include('include/_header'); -%>
+    <div class="icons">
+        <a href="/"> <i class="fa-solid fa-angles-left"> <span>All user</span></i></a>
+    </div>
+    <div class="container">
+        <h1>Update Data</h1>
+        <p>Update the data information.</p>
+    </div>
+    <div class="from-container">
+        <form method="POST" id="update_user">
+            <input type="hidden" name="id" id="id" value="<%= user._id %>">
+            <div class="input-form">
+                <label for="locationid">Location ID</label><br>
+                <input type="number" name="locationid" id="locationid"  value="<%= user.locationid %>" placeholder="locationid ">
+            </div> <br>
+            <div class="input-form">
+                <label for="unit">Unit</label><br>
+                <input type="text" name="unit" id="unit"  value="<%= user.unit %>" placeholder="Humidity">
+            </div><br>
+
+            <div class="input-form">
+                <label for="amount">Amount</label><br>
+                <input type="number" name="amount" id="amount" value="<%= user.amount %>" placeholder="amount ">
+            </div> <br>
+            <div class="input-form">
+                <label for="deviceid">deviceid</label><br>
+                <input type="number" name="deviceid" id="deviceid" value="<%= user.deviceid %>" placeholder="Humidity">
+            </div><br>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <%- include('include/_footer'); -%>
