@@ -5,31 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Table form</title>
-    <title>Courses Registration</title>
 
-    <style>
-        table 
-        {
-           
-            margin: 50px;
-            padding: 20px;
-            border: 20px solid rgb(82, 79, 79);
-            background-color: rgb(194, 178, 252);
+    <title>Task 2.3: Button with Picture</title>
 
-        }
-    </style>
+    <title>Courses Registration </title>
+
+
 </head>
 
-
 <body>
-
-
-
+<h1> Courses Registration </h1>
     <form action="http://animalhospital.freemyip.com/test.php" method="get">
-
-
-        <table style="width: 50%">
+        <table>
             <tr>
                 <td><label for="name">Name :</label></td>
                 <td><input type="text" name="value"></input></td>
@@ -44,6 +31,7 @@
                     <select name="courses" id="Courses">
                         <option value="browser programming">Browser Programming</option>
                         <option value="basic programming">Basic Programming</option>
+                        <option value="java programming">Java Programming</option>
                         <option value="sensor basics">Sensor Basics</option>
                     </select>
                 </td>
@@ -57,11 +45,9 @@
                         <option value="optional course">Optional Course</option>
                         <option value="summer course">Summer Course</option>
                         <option value="winter course">Winter Course</option>
-                    </select> <br>
+                    </select>
                 </td>
             </tr>
-            <br> <br><br> <br> <br>
-
             <tr>
                 <td><label for="gender">Gender :</label></td>
                 <td>
@@ -73,12 +59,10 @@
                     <label for="others">Others</label> <br> <br> <br>
                 </td>
             </tr>
-
-
             <tr>
                 <td><label for="hobbies">Hobbies :</label></td><br>
-                <td>
 
+                <td>
                     <input type="checkbox" id="Hobbies1" name="Hobbies1" value="Badminton">
                     <label for="Hobbies1">Badminton </label> <br>
 
@@ -93,14 +77,11 @@
 
                 </td>
             </tr>
-            <br> <br>
-
             <tr>
-                <td><input type="submit" value="Submit"></td>
+                <td><input type="image" src="buttonPicture.png" alt="Submit" width="70px"></td>
+                
                 <td><input type="reset" value="Reset"></td>
             </tr>
-
-
         </table>
 
     </form>
